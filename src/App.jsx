@@ -1,11 +1,12 @@
 import Counter from "./components/counter/counter";
-import Userdata from "./components/userData";
-function app() {
-  return (
+import Formdata from "./components/formdata";
+function App(){
+  return(
     <div>
-      <Counter />
-      <Userdata/> 
+      {}
+      <Counter/>
+      <FormData/>
     </div>
-  );
-}
-export default app;
+  )
+};
+export default App;
