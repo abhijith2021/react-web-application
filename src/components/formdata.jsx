@@ -1,11 +1,20 @@
 import { useState } from "react";
 
-function Formdata(){
-    const[formData, setFormData]= useState({username:'',email:'',address:''})
+function ShowData(){
+    const[data, setData]= useState({username:'',email:'',address:''});
+    const changeValue = (e)=>{
+        setData(e.target.value)
+        console.log(data)
+    }
     return(
         <div>
-        console.log(formData.name);
+            <form action="">
+                <input type="text"  name="username" value={data?.username} onChange={changeValue}/>
+                <input type="text" name="email" id="" />
+                {/* <button onClick={}></button> */}
+            </form>
         </div>
-    )
-};
-export default Formdata;
+        )
+}
+
+export default ShowData;
